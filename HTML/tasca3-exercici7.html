@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Taula B. Resultat</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+        }
+
+        .barra {
+            background-color: #eee9df;
+            height: 20px;
+            margin: 10px 40px;
+            color: gray;
+            font-size: 12px;
+        }
+
+        .contenidor {
+            width: 1100px;
+            margin: auto;
+        }
+
+        table {
+            border: 2px solid #aaa;
+            border-spacing: 3px;
+            width: 100%;
+        }
+
+        td {
+            border: 1px solid white;
+            padding: 5px;
+        }
+
+        .formulari {
+            background-color: blue;
+            width: 30%;
+            text-align: center;
+            height: 290px;
+        }
+
+        .taula-groga {
+            background-color: yellow;
+            text-align: center;
+            height: 200px;
+        }
+
+        .vermell {
+            background-color: red;
+            height: 90px;
+        }
+
+        .gris {
+            background-color: gray;
+            text-align: right;
+            height: 55px;
+        }
+
+        .rosa {
+            background-color: #ff0055;
+            width: 45%;
+            height: 190px;
+        }
+
+        .verd {
+            background-color: #00ee55;
+            height: 190px;
+        }
+
+        .lila {
+            background-color: #5500ff;
+            text-align: center;
+            height: 130px;
+        }
+
+        .baix {
+            background-color: #aabbcc;
+            text-align: center;
+            height: 60px;
+        }
+
+        .petita {
+            font-size: 12px;
+        }
+
+        input, select {
+            margin: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="contenidor">
+
+    <div class="barra">
+        ◉ Control A. Web 2010-2011 Taul...　 ✚
+    </div>
+
+    <table>
+        <caption>Taula B. Resultat</caption>
+
+        <tr>
+            <td class="formulari" rowspan="2">
+                <h2>Formulari</h2>
+
+                <form>
+                    Nom:
+                    <input type="text" name="nom"><br>
+
+                    P:
+                    <input type="password" name="contrasenya"><br>
+
+                    SQR:
+                    <textarea name="sqr" rows="3" cols="12"></textarea><br>
+
+                    Professió:
+                    <input type="radio" name="professio" value="estudiant" checked>
+                    Estudiant
+
+                    <input type="radio" name="professio" value="treball">
+                    Treball<br>
+
+                    Estat Civil:
+                    <input type="radio" name="estat" value="si"> Sí
+                    <input type="radio" name="estat" value="no" checked> No<br>
+
+                    Edat:
+                    <select name="edat">
+                        <option>Entre 16 i 20</option>
+                        <option>Entre 21 i 30</option>
+                        <option>Entre 31 i 40</option>
+                    </select><br>
+
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </form>
+            </td>
+
+            <td class="vermell">
+                <h2>Aquí provar tots els estils de lletres</h2>
+
+                <b>Negreta</b>
+                <i>Itàlica</i>
+                <mark>marcada</mark>
+                <strong>Destacada</strong>
+                <q>Entre comes</q>
+                <small>Lletra petita</small>
+                <b>Remarcada</b>
+                <code>loge - 1;</code>
+                m<sup>2</sup>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="gris">
+                <h2>Aquí provar tots els tipus d'enllaços</h2>
+
+                <a href="#menu">Tornar al menú</a> |
+                <a href="#taula">Tornar a la Taula A. Estructura</a> |
+                <a href="https://www.google.com">Google</a> |
+                <a href="https://www.calendar.google.com">Calendari</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="taula-groga" rowspan="2">
+                <h2>Inserirem un altre taula</h2>
+
+                <p>Taula<br>Prova</p>
+
+                <table border="1" style="width:100px; margin:auto;">
+                    <tr>
+                        <td>A</td>
+                        <td rowspan="2">B</td>
+                        <td rowspan="2">C</td>
+                        <td>D</td>
+                    </tr>
+                    <tr>
+                        <td>E</td>
+                        <td rowspan="2">F</td>
+                    </tr>
+                    <tr>
+                        <td>H</td>
+                        <td>G</td>
+                        <td>I</td>
+                    </tr>
+                </table>
+            </td>
+
+            <td>
+                <table style="width:100%; border-spacing:2px;">
+                    <tr>
+                        <td class="rosa">
+                            <h2>Exemple de llistes ordenades</h2>
+
+                            <ol>
+                                <li>Aplicacions Web</li>
+                                <li>Sistemes operatius en xarxa</li>
+                                <li>Seguretat</li>
+                                <li>Bases de dades</li>
+                            </ol>
+                        </td>
+
+                        <td class="verd">
+                            <h2>Exemple de llistes desordenades</h2>
+
+                            <ul>
+                                <li>Aplicacions Web</li>
+                                <li>Sistemes operatius en xarxa</li>
+                                <li>Seguretat</li>
+                                <li>Bases de dades</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="lila">
+                <h2>Imatge</h2>
+
+                <img src="imatge.jpg" alt="Imatge de codi font"
+                     width="220" height="85">
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2" class="baix">
+                <h2>Aquí hi anirà el codi font</h2>
+
+                <pre class="petita">function comprovar(){ if (document.f1.nom.value=="")(alert("Això no pot ser!"); return 0; }</pre>
+            </td>
+        </tr>
+
+    </table>
+
+</div>
+
+</body>
+</html>
